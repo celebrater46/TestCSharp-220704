@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CubeAController : MonoBehaviour
@@ -14,5 +15,10 @@ public class CubeAController : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Hit!!");
     }
 }
